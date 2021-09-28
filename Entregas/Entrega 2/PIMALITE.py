@@ -18,6 +18,11 @@ import Adafruit_DHT
 import paho.mqtt.publish as publish
 from time import sleep
 
+# Importa la librería para timestamp.
+from datetime import datetime
+now = datetime.now()
+
+
 # Configuración de pines tipo BCM.
 GPIO.setmode(GPIO.BCM)
 
@@ -77,7 +82,7 @@ while True:
     topic = "channels/"+"1515522"+"/publish/"+"R3HWFDSTELZGAZP1"
 
     # Creación del mensaje 
-    mensaje = "field1="+str(Temperatura)+"&field2="+str(Humedad)+"&field3="+str(Metano)+"&field4="+str(Monoxido)
+    mensaje = "field1="+str(Temperatura)+"&field2="+str(Humedad)+"&field3="+str(Metano)+"&field4="+str(Monoxido)+"&field5="+str(now)
     try:
         publish.single(topic,payload=mensaje,hostname="mqtt.thingspeak.com",port=1883,tls=None,transport="tcp")
     except:
