@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>PIMA Lite || Información</title>
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+
+
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+		<!-- Fix Internet Explorer ______________________________________-->
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+			
+	</head>
+
+	<body>
+		<div class="main-page-wrapper">
+
+
+
+			<!-- 
+			=============================================
+				Theme Header
+			============================================== 
+			-->
+			<header class="theme-main-header">
+				<div class="container">
+					<a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo"></a>
+					
+					<!-- ========================= Theme Feature Page Menu ======================= -->
+					<nav class="navbar float-right theme-main-menu">
+					   <!-- Brand and toggle get grouped for better mobile display -->
+					   <div class="navbar-header">
+					     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+					       <span class="sr-only">Toggle navigation</span>
+					       Menu
+					       <i class="fa fa-bars" aria-hidden="true"></i>
+					     </button>
+					   </div>
+					   <!-- Collect the nav links, forms, and other content for toggling -->
+					   <div class="collapse navbar-collapse" id="navbar-collapse-1">
+					     <ul class="nav navbar-nav">
+					       	<li><a href="index.html#home">HOME</a></li>
+							<li><a href="index.html#about-us">¿QUÉ ES?</a></li>
+							<li><a href="index.html#service-section">SERVICIOS</a></li>
+							<li><a href="index.html#project-section">SISTEMA</a></li>
+							<li><a href="index.html#team-section">EQUIPO</a></li>
+							<li><a href="index.html#skill-section">THINGSPEAK</a></li>
+							<li><a href="index.html#our-client">LOGIN</a></li>
+							<li class="dropdown-holder active"><a href="index.html#blog-section">INFORMACIÓN</a>
+								<ul class="sub-menu">
+					       			<li><a href="#" class="tran3s">Detalles</a></li>
+					       		</ul>
+							</li>
+					     </ul>
+					   </div><!-- /.navbar-collapse -->
+					</nav> <!-- /.theme-feature-menu -->
+				</div>
+			</header> <!-- /.theme-main-header -->
+
+
+			<!--
+			=====================================================
+				Theme Inner page Banner
+			=====================================================
+			-->
+			<section class="inner-page-banner">
+				<div class="opacity">
+					<div class="container">
+						<h2>PIMA Lite || Información</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>/</li>
+							<li>Detalles</li>
+						</ul>
+					</div> <!-- /.container -->
+				</div> <!-- /.opacity -->
+			</section> <!-- /.inner-page-banner -->
+			
+
+			
+			<!--
+			=====================================================
+				Blog Page Details
+			=====================================================
+			-->
+			<article class="blog-details-page">
+				<div class="container">
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 p-fix">
+						<div class="blog-details-post-wrapper">
+							<img src="images/blog/8.jpg" alt="Image">
+							<div class="post-heading">
+								<h4>Problematica</h4>
+								<span>Desarrollado por <a href="#" class="tran3s p-color">PIMA Lite</a>  el 27 Sept, 2021</span>
+							</div> <!-- /.post-heading -->
+							<p>La contaminación atmosférica es algo de suma importancia, ya que afecta directamente la salud y la calidad de vida de las personas deteriorando el ambiente en el que viven, esto ligado al aumento del material particulado en el ambiente, el cual es directamente proporcional a la cantidad de morbilidad representada por problemas cerebro-vasculares, cánceres de pulmón y neumopatías crónicas y agudas. Por otra parte, la quema de constante de combustibles fósiles, la minería, la agricultura, la ganadería y las emisiones por parte de los vehículos generan anualmente un gran impacto ambiental, aunque de todos estos los vehículos particularmente son los que tienen un porcentaje de afectación mayor con un 86%.
+								El aumento de muertes prematuras a causa de enfermedades respiratorias es algo realmente alarmante, anualmente mueren cerca de 6000 personas a causa de estos problemas, sin contar que se generan 255000 consultas hospitalarias de urgencias y externas a causa de la contaminación atmosférica. Si hablamos de otros aspecto como el económico, la contaminación atmosférica es la tercer problemática que más genera costos, con una cifra que asciende a 1,5 billones de pesos.
+								</p>
+							<h6>Descripción</h6>
+							<p>El proyecto PIMA Lite consta de 3 entradas, dos de ellas dadas por los contaminantes a medir y una de ellas por la humedad y la temperatura. Los contaminantes son medidos haciendo uso de dos sensores, para la medición del metano (CH4) se hará uso del sensor MQ-4, para medición del monóxido de carbono se hará uso del sensor MQ-7 y finalmente para la temperatura y humedad se hará uso del sensor DHT-11.
+								Se realizará una medición constante de estas variables, las cuales se procesarán haciendo uso de una Raspberry.Todos estos datos que se están mesurando serán guardados en una base de datos para posteriormente mostrarlos y generar las relaciones respectivas, todo esto pasando a través de un servidor.
+								El sistema en general cuenta con 2 salidas, una de ellas corresponde a un actuador que hace la función de alarma sonora para informar que los niveles de contaminación no son los adecuados o que es necesario tomar medidas para no sufrir grandes daños.
+								La segunda salida corresponde a la segunda parte del proyecto la cual brinda un servicio de una pagina web donde se presentará una información de manera mucho más detallada y clara.
+								</p>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<p><i class="fa fa-quote-left" aria-hidden="true"></i>Tras haber medido todos los datos se procederá a muestrearlos en diferentes escalas, se mostrarán los datos por día (Hoy), por semana y por mes. De igual forma se contará con una barra desplegable a partir de la cual se podrá elegir cual variable se desea ver en pantalla.
+										Estos datos se podrán evidenciar de manera independiente respecto al tiempo, pero también relacionando las variables entre si, así como monóxido de carbono vs temperatura.
+										<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+								</div> <!-- /.col -->
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<img src="images/blog/9.jpg" alt="Image">
+								</div> <!-- /.col- -->
+							</div> <!-- /.row -->
+
+							<p>De igual manera se podrá observar en un mapa la distribución que tienen los datos y como es la tendencia de los mismos a lo largo del tiempo para así poder generar una predicción muy simple de los datos. Se cuenta con un diseño preliminar el cual puede verse afectado por los cambios que vayan surgiendo a medida que se desarrolla el proyecto.Para la solución de este proyecto se considero tres variables determinantes, estas son: costo, calidad y beneficio. De esta manera se garantiza el correcto funcionamiento y de la misma manera el mejor uso de los recursos. Los componentes utilizados son:</p>
+							<div class="clear-fix list-img-wrapper">
+								<img src="images/blog/10.jpg" alt="Image" class="float-left">
+								<ul class="float-left">
+									<li><a href="#" class="tran3s"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Raspberry Pi 3.</a></li>
+									<li><a href="#" class="tran3s"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Sensor de temperatura y Humedad DHT11.</a></li>
+									<li><a href="#" class="tran3s"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Sensor MQ-7 Monóxido de carbono.</a></li>
+									<li><a href="#" class="tran3s"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Sensor MQ-4 Gas metano.</a></li>
+									<li><a href="#" class="tran3s"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Actuador altavoz. </a></li>								</ul>
+							</div> <!-- /.list-img-wrapper -->
+
+
+							<div class="clear-fix post-share-area">
+								<ul class="share float-left">
+									<li><a href="#" class="tran3s active">Placa madre,</a></li>
+									<li><a href="#" class="tran3s">Sensores ,</a></li>
+									<li><a href="#" class="tran3s">Actuadores,</a></li>
+									<li><a href="#" class="tran3s">Funcionamiento</a></li>
+								</ul>
+								<ul class="share-icon float-right">
+									<li>Share:</li>
+									<li><a href="#" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="tran3s round-border"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								</ul>
+							</div> <!-- /post-share-area -->
+
+							<div class="post-comment">
+								<h4>Alguna sugerencia</h4>
+
+								<form action="#" method="post">
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<span>Nombre*</span>
+											<div class="single-input">
+												<input type="text">
+											</div> <!-- /.single-input -->
+										</div> <!-- /.col- -->
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<span>Correo*</span>
+											<div class="single-input">
+												<input type="email">
+											</div> <!-- /.single-input -->
+										</div> <!-- /.col- -->
+
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+											<span>Sugerencia</span>
+											<div class="single-input">
+												<textarea></textarea>
+											</div> <!-- /.single-input -->
+										</div> <!-- /.col- -->
+									</div> <!-- /.row -->
+
+									<button class="tran3s p-color-bg">Enviar!</button>
+								</form>
+							</div> <!-- /.post-comment -->
+						</div> <!-- /.blog-details-post-wrapper -->
+					</div> <!-- /.col- -->
+
+					<!-- ========================== Aside Bar ======================== -->
+					<div class="col-lg-4 col-md-4 col-sm-8 col-xs-12 p-fix">
+						<aside>
+							<form action="#" class="sidebar-search-box">
+								<input type="text" placeholder="Search...">
+								<button class="p-color-bg"><i class="fa fa-search" aria-hidden="true"></i></button>
+							</form>
+
+							<div class="sidebar-news-list">
+								<h6>ETAPAS DE DESARROLLO (METODOLOGÍA)</h6>
+								<ul>
+									<li><a href="#" class="tran3s active"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Diseño de la solución</a></li>
+									<li><a href="#" class="tran3s"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Implementación</a></li>
+									<li><a href="#" class="tran3s"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Pruebas del sistema</a></li>
+								</ul>
+							</div> <!-- /.sidebar-news-list -->
+
+							<div class="sidebar-calendar">
+								<h6>Calendar</h6>
+								<div class="monthly" id="blog-calendar"></div>
+							</div> <!-- /.sidebar-calendar -->
+
+							<div class="sidebar-archives">
+								<h6>DOCUMENTOS DE INTERÉS</h6>
+								<ul>
+									<li><a href="#" class="tran3s active"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Documentación CEA IoT</a></li>
+									<li><a href="#" class="tran3s"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Documentación ICA</a></li>
+									<li><a href="#" class="tran3s"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Historial de datos</a></li>
+								</ul>
+							</div> <!-- /.sidebar-archives -->
+
+							<div class="sidebar-recent-post">
+								<h6>DETALLE</h6>
+
+								<div class="recent-single-post clear-fix">
+									<img src="images/blog/4.jpg" alt="Image" class="float-left">
+									<div class="post float-left">
+										<a href="#" class="tran3s">Diseño</a>
+										<span>27 Sept, 2021</span>
+									</div> <!-- /.post -->
+								</div> <!-- /.recent-single-post -->
+
+								<div class="recent-single-post clear-fix">
+									<img src="images/blog/5.jpg" alt="Image" class="float-left">
+									<div class="post float-left">
+										<a href="#" class="tran3s">Placa Madre</a>
+										<span>27 Sept, 2021</span>
+									</div> <!-- /.post -->
+								</div> <!-- /.recent-single-post -->
+
+								<div class="recent-single-post clear-fix">
+									<img src="images/blog/6.jpg" alt="Image" class="float-left">
+									<div class="post float-left">
+										<a href="#" class="tran3s">Nube</a>
+										<span>27 Sept, 2021</span>
+									</div> <!-- /.post -->
+								</div> <!-- /.recent-single-post -->
+
+								<div class="recent-single-post clear-fix">
+									<img src="images/blog/7.jpg" alt="Image" class="float-left">
+									<div class="post float-left">
+										<a href="#" class="tran3s">Sensores</a>
+										<span>27 Sept, 2021</span>
+									</div> <!-- /.post -->
+								</div> <!-- /.recent-single-post -->
+							</div> <!-- /.sidebar-recent-post -->
+
+							<div class="sidebar-tags">
+								<h6>Palabras clave</h6>
+								<ul>
+									<li><a href="#" class="tran3s">IoT</a></li>
+									<li><a href="#" class="tran3s">Raspberry Pi 3</a></li>
+									<li><a href="#" class="tran3s">Sensor</a></li>
+									<li><a href="#" class="tran3s">Contaminación ambiental</a></li>
+									<li><a href="#" class="tran3s">ICA</a></li>
+									<li><a href="#" class="tran3s">Contaminantes</a></li>
+									<li><a href="#" class="tran3s">Optimización</a></li>
+									<li><a href="#" class="tran3s">Graficas</a></li>
+								</ul>
+							</div> <!-- /.sidebar-tags -->
+						</aside>
+					</div> <!-- /.col- -->
+				</div> <!-- /.container -->
+			</article>
+	        
+
+
+
+			<!--
+			=====================================================
+				Footer
+			=====================================================
+			-->
+			<footer>
+				<div class="container">
+					<a href="index.html" class="logo"><img src="images/logo/logo.png" alt="Logo"></a>
+
+					<ul>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+					</ul>
+					<p>Copyright 2016-2017 <a href="https://themeforest.net/user/srthemes/portfolio" class="tran3s p-color" target="_blank">PIMA Lite</a> All rights reserved.</p>
+				</div>
+			</footer>
+
+
+
+
+			<!-- =============================================
+				Loading Transition
+			============================================== -->
+			<div id="loader-wrapper">
+				<div id="preloader_1">
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	            </div>
+			</div>
+
+			
+
+	        <!-- Scroll Top Button -->
+			<button class="scroll-top tran3s p-color-bg">
+				<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+			</button>
+
+
+
+
+		<!-- Js File_________________________________ -->
+
+		<!-- j Query -->
+		<script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
+
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+
+		<!-- Vendor js _________ -->
+		
+		<!-- owl.carousel -->
+		<script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
+		<!-- mixitUp -->
+		<script type="text/javascript" src="vendor/jquery.mixitup.min.js"></script>
+		<!-- Progress Bar js -->
+		<script type="text/javascript" src="vendor/skills-master/jquery.skills.js"></script>
+		<!-- Validation -->
+		<script type="text/javascript" src="vendor/contact-form/validate.js"></script>
+		<script type="text/javascript" src="vendor/contact-form/jquery.form.js"></script>
+		<!-- Calendar js -->
+		<script type="text/javascript" src="vendor/monthly-master/js/monthly.js"></script>
+
+
+		<!-- Theme js -->
+		<script type="text/javascript" src="js/theme.js"></script>
+		<script type="text/javascript" src="js/map-script.js"></script>
+
+		</div> <!-- /.main-page-wrapper -->
+	</body>
+</html>
