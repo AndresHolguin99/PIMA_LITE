@@ -26,11 +26,16 @@ now = datetime.now()
 # Configuración de pines tipo BCM.
 GPIO.setmode(GPIO.BCM)
 
+# Deshabilitar alarmas GPIO
+GPIO.setwarnings(False)
+
 # Configuración de puertos.
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(4, GPIO.IN)
 GPIO.setup(15, GPIO.IN)
 GPIO.setup(18, GPIO.IN)
+GPIO.setup(17, GPIO.OUT)
+
 
 # Configuracion Hardware SPI.
 SPI_PORT   = 0
@@ -40,6 +45,12 @@ mcp = Adafruit_MCP3008.MCP3008(spi=SPI.SpiDev(SPI_PORT, SPI_DEVICE))
 # Configuración DHT.
 sensor = Adafruit_DHT.DHT11
 pin = 4
+buzzer = 17
+
+# Configuración Buzzer
+estadoMQ4 = 0
+estadoMQ7 = 0
+
 
 while True:
     # Lectura del MCP3008 para los canales 0 y 1
@@ -71,6 +82,39 @@ while True:
     else:
         print("Se detecta CO")
         sleep(0.1)
+        
+    # Alarma Buzzer
+    sleep(0.1)
+    if humedad > 60:
+        GPIO.output(buzzer,True)
+        # Alarma riesgo bajo: 1s
+        sleep(1)
+        GPIO.output(buzzer,False)
+        sleep(15)
+        
+        
+    if temperatura > 30:
+        GPIO.output(buzzer,True)
+        # Alarma riesgo medio: 2s
+        sleep(2)
+        GPIO.output(buzzer,False)
+        sleep(15)
+    
+    estadoMQ4 = GPIO.input(18)
+    if estadoMQ4 ==1:
+        GPIO.output(buzzer,True)
+        # Alarma riesgo alto: 3s
+        sleep(3)
+        GPIO.output(buzzer,False)
+        sleep(15)
+        
+    estadoMQ7 = GPIO.input(15)
+    if estadoMQ7 ==1:
+        GPIO.output(buzzer,True)
+        # Alarma riesgo alto: 3s
+        sleep(3)
+        GPIO.output(buzzer,False)
+        sleep(15)
         
     # Almacenamiento de variables
     Temperatura = temperatura
