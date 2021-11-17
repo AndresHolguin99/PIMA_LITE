@@ -5,6 +5,8 @@ sudo crontab -e
 
 // Comando para ejecutar PIMALITE.py cada minuto y guardar logs en PIMALITEexec.txt
 */1 * * * * sudo python3 /home/pi/Desktop/PIMALITE.py >> /home/pi/Desktop/PIMALITEexec.txt
+@reboot */1 * * * * sudo python3 /home/pi/Desktop/PIMALITE.py >> /home/pi/Desktop/PIMALITEexec.txt
+
 
 Ctrl + O -> Guardar
 Enter
